@@ -2,6 +2,7 @@ body {
   font-family: 'Raleway', 'Arial', sans-serif;
 }
 
+/* header */
 .header{
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -75,4 +76,83 @@ body {
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
+}
+
+/* cover */
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 165px 50px 51px;
+  background: url('../images/cover.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.cover__title {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 100px;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+}
+
+.aligned-text {
+  display: block;
+  line-height: 115%;
+}
+
+.aligned-text_center {
+  display: block;
+  padding: 10px 55px 0px 0px;
+  text-align: center;
+}
+
+.aligned-text_right {
+  display: block;
+  padding: 4px 1px 0px 0px;
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.35em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 76px;
+  padding-top: 125px;
+}
+
+.cover__description-text {
+  margin: 12px 0px 9px 28px;
+  color: white;
+  font-size: 22px;
+  word-spacing: 19px;
+}
+
+.bet-button {
+  border: 1px solid white;
+  padding: 12px 32px 11px 31px;
+  color: white;
+  font-size: 22px;
 }
