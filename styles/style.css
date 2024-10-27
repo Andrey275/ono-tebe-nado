@@ -58,6 +58,7 @@
 
 .header__address a,
 .footer__address a {
+  display: block;
   color: black;
   font-size: 18px;
   font-style: normal;
@@ -65,7 +66,6 @@
   text-decoration: underline;
   text-decoration-skip-ink: auto;
   text-underline-offset: 3px;
-  display: block;
 }
 
 .header__address p ,
@@ -138,20 +138,20 @@
 }
 
 .cover__description-text {
+  max-height: 26px;
   margin: 12px 0px 9px 28px;
   color: white;
   font-size: 22px;
   word-spacing: 19px;
-  max-height: 26px;
   white-space: nowrap;
 }
 
 .bet-button {
+  max-height: 51px;
   border: 1px solid white;
   padding: 12px 32px 11px 31px;
   color: white;
   font-size: 22px;
-  max-height: 51px;
   white-space: nowrap;
 }
 
@@ -287,12 +287,11 @@
 }
 
 .about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   font-size: 20px;
   line-height: 24px;
-}
-
-.about__first-paragraph {
-  margin-bottom: 24px;
 }
 
 .footer {
