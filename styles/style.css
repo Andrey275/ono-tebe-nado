@@ -153,6 +153,7 @@ body {
   font-size: 22px;
   word-spacing: 19px;
   max-height: 26px;
+  white-space: nowrap;
 }
 
 .bet-button {
@@ -161,6 +162,7 @@ body {
   color: white;
   font-size: 22px;
   max-height: 51px;
+  white-space: nowrap;
 }
 
 .lots {
