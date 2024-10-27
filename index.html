@@ -10,21 +10,19 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="Main">
         <nav class="header__menu">
           <ul class="header__links-list">
-              <li class="header__links-list-item_no-bullit"><a href="#" class="header__link">главная</a></li>
-              <li class="header__links-list-item"><a href="#" class="header__link">посмотреть лоты</a></li>
-              <li class="header__links-list-item"><a href="#" class="header__link">об аукционе</a></li>
+              <li class="header__links-list-item_no-bullit"><a href="#Main" class="header__link">главная</a></li>
+              <li class="header__links-list-item"><a href="#Lots" class="header__link">посмотреть лоты</a></li>
+              <li class="header__links-list-item"><a href="#About" class="header__link">об аукционе</a></li>
           </ul>
         </nav>
-      
       <div class="header__logo">
           <a href="#">
               <img class="header__logo-image" src="./images/logo-black.svg" alt="Логотип">
           </a>
       </div>
-
       <address class="header__address">
           <a href="tel:+9995555555">+9 999 555 5555</a><br>
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
@@ -32,7 +30,7 @@
       </address>
     </header>
 
-    <cover class="cover">
+    <section class="cover">
       <div class="overlay"></div>
       <h1 class="cover__title">
         <span class="aligned-text">
@@ -57,9 +55,9 @@
         <p class="cover__description-text">АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>
         <div class="bet-button">СДЕЛАТЬ СТАВКУ</div>
       </div>
-    </cover>
+    </section>
 
-    <section class="lots">
+    <section class="lots" id="Lots">
       <h2 class="lots__heading">ЛОТЫ</h2>
       <ul class="lots__card-list">
           <li class="lots__card-list-item">
@@ -92,7 +90,7 @@
       </ul>
       <a href="#" class="lots__look-more-link">посмотреть больше</a>
   </section>
-  <section class="about">
+  <section class="about" id="About">
     <div class="about__column about__column_left">
       <div class="about__logo">
         <img src="../images/logo-white.svg" alt="Логотип" class="about__logo-image">
@@ -107,6 +105,43 @@
       </div>
     </div>
   </section>
-    <foother></foother>
+
+  <footer class="footer">
+    <address class="footer__address">
+        <a href="tel:+9995555555">+9 999 555 5555</a><br>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+        <p>наб. Принсенграхт 263-<br>265, Амстердам</p>
+    </address>
+    <nav class="footer__menu">
+        <ul class="footer__menu-list">
+            <li class="footer__menu-list-item">
+                <a href="#Main" class="footer__menu-link footer__menu-link_active">главная</a>
+            </li>
+            <li class="footer__menu-list-item">
+                <a href="#Lots" class="footer__menu-link">посмотреть лоты</a>
+            </li>
+            <li class="footer__menu-list-item">
+                <a href="#About" class="footer__menu-link">об аукционе</a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+            <a href="#" class="footer__social-link">
+                <img src="../images/yt.svg" alt="YouTube" class="footer__social-icon">
+            </a>
+        </li>
+        <li class="footer__social-list-item">
+            <a href="#" class="footer__social-link">
+                <img src="../images/vk.svg" alt="VK" class="footer__social-icon">
+            </a>
+        </li>
+        <li class="footer__social-list-item">
+            <a href="#" class="footer__social-link">
+                <img src="../images/pinterest.svg" alt="Pinterest" class="footer__social-icon">
+            </a>
+        </li>
+    </ul>
+  </footer>
   </body>
 </html>

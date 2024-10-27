@@ -2,7 +2,6 @@ body {
   font-family: 'Raleway', 'Arial', sans-serif;
 }
 
-
 .header{
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -62,7 +61,8 @@ body {
   text-align: left;
 }
 
-.header__address a {
+.header__address a,
+.footer__address a {
   color: black;
   font-size: 18px;
   font-style: normal;
@@ -72,21 +72,24 @@ body {
   text-underline-offset: 3px;
 }
 
-.header__address p {
+.header__address p ,
+.footer__address p {
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
 }
-
 
 .cover {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 165px 50px 51px;
-  background: url('../images/cover.jpg') no-repeat center center/cover;
   margin-bottom: 181px;
+  padding: 165px 50px 51px;
+  background: url('../images/cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
@@ -158,25 +161,24 @@ body {
   font-size: 22px;
 }
 
-
 .lots {
   padding: 0px 24px 146px;
 }
 
 .lots__heading {
-  font-size: 40px;
-  font-weight: bold;
   margin-bottom: 27px;
-  line-height: 47px;
   padding-left: 40px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
 }
 
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .lots__card-list-item {
@@ -187,20 +189,20 @@ body {
 
 .card-link {
   display: block;
-  text-decoration: none;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
   position: relative;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
   padding: 51px 40px 48px;
   color: white;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
@@ -218,12 +220,12 @@ body {
 .card__title {
   position: relative;
   z-index: 2;
-  font-size: 22px;
   font-weight: bold;
-  text-transform: uppercase;
+  font-size: 22px;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
   text-underline-offset: 3px;
+  text-transform: uppercase;
 }
 
 .card__text {
@@ -236,21 +238,20 @@ body {
   display: block;
   margin-top: 30px;
   margin-left: 40px;
-  text-align: start;
-  font-size: 20px;
   color: black;
+  font-size: 20px;
+  text-align: start;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
   text-underline-offset: 3px;
 }
 
-
 .about {
   display: grid;
   grid-template-columns: minmax(300px, 1fr) 2fr;
-  grid-gap: 16px;
+  margin-bottom: 144px;
   padding: 35px 20px;
-  margin-bottom: 180px;
+  grid-gap: 16px;
 }
 
 .about__column_left,
@@ -268,13 +269,13 @@ body {
 }
 
 .about__logo {
-  width: 240px;
-  height: 240px;
-  background-color: black;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
 }
 
 .about__logo-image {
@@ -283,11 +284,11 @@ body {
 }
 
 .about__title {
-  font-size: 40px;
-  font-weight: bold;
+  align-self: start;
   margin-top: 98px;
   margin-bottom: 100px;
-  align-self: start;
+  font-weight: bold;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
@@ -302,4 +303,60 @@ body {
 
 .no-margin-bottom {
   margin-bottom: 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  margin: 0 50px 0;
+}
+
+.footer__address {
+  padding-left: 0;
+  text-align: left;
+}
+
+.footer__menu {
+  text-align: center;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__menu-link {
+  color: black;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }
